@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="room_status_cell_length">50dp</dimen>
+    <dimen name="main__item_layout_minHeight">100dp</dimen>
+
+    <dimen name="main__item_file_name_text_size">14sp</dimen>
+    <dimen name="main__item_downloaded_size_text_size">10sp</dimen>
+    <dimen name="main__item_total_size_text_size">10sp</dimen>
+    <dimen name="main__item_download_percent_text_size">10sp</dimen>
+    <dimen name="main__item_extra_text_text_size">10sp</dimen>
+
+</resources>

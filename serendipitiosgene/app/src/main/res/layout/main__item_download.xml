@@ -1,0 +1,104 @@
+<LinearLayout
+    android:id="@+id/lnlyDownloadItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_line"
+    android:minHeight="@dimen/main__item_layout_minHeight"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/cloudicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Textview_filename"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Unknown"
+            android:textSize="@dimen/main__item_file_name_text_size"/>
+
+        <ProgressBar
+            android:id="@+id/pbProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDownloadSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="00.00M/"
+                    android:textSize="@dimen/main__item_downloaded_size_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvTotalSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="00.00M"
+                    android:textSize="@dimen/main__item_total_size_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="00.00%"
+                    android:textSize="@dimen/main__item_download_percent_text_size"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Textview_filepath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="0.00K/s"
+                android:textSize="@dimen/main__item_extra_text_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

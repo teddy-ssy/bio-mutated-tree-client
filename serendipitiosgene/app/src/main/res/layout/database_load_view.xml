@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_database_load_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="current version: "
+            android:id="@+id/textview_database_load_1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.3.4311"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textview_database_load_1" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_database_load_2"
+        android:text="available version of database"
+        android:layout_below="@+id/relativeLayout_database_load_1"
+         />
+    <RelativeLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textview_database_load_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_database_load_2">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textview_database_load_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search:"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/button_database_load_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/textview_database_load_3"
+            android:layout_toStartOf="@+id/button_database_load_search"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview_database_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_database_load_2"
+        ></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:textSize="10dp"
+        android:text="bindingprotein:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Textview_bond1"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/Textview_bond1"
+        android:textSize="10dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Textview_bond"/>
+
+    <TextView
+
+        android:layout_centerVertical="true"
+        android:textSize="10dp"
+        android:text="position:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Textview_position1"
+        android:layout_toEndOf="@+id/Textview_bond"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+
+        android:textSize="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Textview_position"
+        android:layout_toEndOf="@+id/Textview_position1"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:text="orginalgene:"
+        android:layout_toEndOf="@+id/Textview_position"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Textview_orgingene1"/>
+
+    <TextView
+        android:textSize="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Textview_orgingene"
+        android:layout_toEndOf="@+id/Textview_orgingene1"/>
+
+
+
+</RelativeLayout>

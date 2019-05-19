@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_cloud"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="input your group id"/>
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/button_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_below="@+id/line_cloud"
+        android:id="@+id/Downloadbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/lnlyOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Download"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDownloadFileList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Downloadbar" />
+
+
+</RelativeLayout>

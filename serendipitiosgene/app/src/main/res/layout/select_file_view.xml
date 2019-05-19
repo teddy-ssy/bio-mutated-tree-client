@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/folder"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#111"
+            android:layout_toEndOf="@+id/image1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/image2"/>
+
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/undo"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_return_selectfile_start"
+            />
+
+        <TextView
+            android:id="@+id/textview_file_select_path"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image2"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/button_return_selectfile_start"
+            android:text="address"/>
+    </RelativeLayout>
+    <Button
+        android:background="@drawable/cloudrefresh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button_select_file_return_root"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_select_file"
+        android:layout_above="@+id/button_select_file_return_root"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        tools:context="com.example.shengyuansun.serendipitiosgene.VisualizationExcelActivity">
+
+
+        <com.example.excelpanel.excelpanel.ExcelPanel
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_cell_width="56dp"
+            app:normal_cell_width="50dp"
+            app:top_cell_height="50dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+    <views.VisualizationCircleView
+        android:id="@+id/visualization_circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/framelayout" />
+    <ImageView
+        android:id="@+id/view_image_1"
+        android:layout_above="@id/framelayout"
+        android:layout_alignEnd="@id/framelayout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#AADDE1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pbp1a"
+        android:layout_alignStart="@+id/textView2"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/view_image_1"
+        android:layout_toStartOf="@+id/view_image_2" />
+    <ImageView
+        android:layout_above="@id/view_image_1"
+        android:layout_alignEnd="@id/framelayout"
+        android:id="@+id/view_image_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#43B4E0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pbp1b"
+        android:layout_toStartOf="@+id/view_image_1"
+        android:layout_above="@+id/framelayout"
+        android:id="@+id/textView2" />
+    <ImageView
+        android:layout_above="@id/view_image_2"
+        android:layout_alignEnd="@id/framelayout"
+        android:id="@+id/view_image_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#1D8FDA"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pbp1c"
+        android:id="@+id/textView4"
+        android:layout_toStartOf="@+id/view_image_2"
+        android:layout_above="@+id/view_image_2" />
+    <ImageView
+        android:layout_above="@id/view_image_3"
+        android:layout_alignEnd="@id/framelayout"
+        android:id="@+id/view_image_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#0572BA"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pbp1d"
+        android:layout_above="@+id/view_image_3"
+        android:layout_alignEnd="@+id/textView4" />
+
+
+
+</RelativeLayout>
